@@ -9,14 +9,14 @@ for x in file:
     x = x.split(":")
     res = x[1].replace(';', ' ').replace(', ', ' ').split()
     dolzina = len(res)
-    #print(dolzina)
-    #print(res)
+    # print(dolzina)
+    # print(res)
     id += 1
     possible_sum += id
 
     for i in range(int(dolzina/2)):
-        #print(res[2 * i]) # kolicina
-        #print(res[2*i + 1]) # barva
+        # print(res[2 * i]) # kolicina
+        # print(res[2*i + 1]) # barva
         if ((int(res[2 * i]) > 12) and (res[2*i + 1] == "red")) or ((int(res[2 * i]) > 13) and (res[2*i + 1] == "green")) or ((int(res[2 * i]) > 14) and (res[2*i + 1] == "blue")):
             possible_sum -= id
             break
@@ -39,8 +39,8 @@ for x in file:
     min_blue = 0
 
     for i in range(int(dolzina/2)):
-        #print(res[2 * i]) # kolicina
-        #print(res[2*i + 1]) # barva
+        # print(res[2 * i]) # kolicina
+        # print(res[2*i + 1]) # barva
         if (res[2*i + 1] == "red") and (int(res[2 * i]) > min_red):
             min_red = int(res[2 * i])
         if (res[2 * i + 1] == "green") and (int(res[2 * i]) > min_green):

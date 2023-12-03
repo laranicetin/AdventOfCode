@@ -15,7 +15,6 @@ for x in file:
     sum += line_sum
 file.close()
 print(sum)
-# 54968
 print("--------")
 
 # part 2
@@ -44,5 +43,3 @@ for x in file:
     sum += line_sum
 file.close()
 print(sum)
-
-# too low 53652
