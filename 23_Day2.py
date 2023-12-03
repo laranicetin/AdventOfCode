@@ -24,9 +24,6 @@ for x in file:
 file.close()
 print(possible_sum)
 
-# 2282 too low
-# 2522 too low
-
 # part 2
 
 file = open("23_Day2.txt", "r")
